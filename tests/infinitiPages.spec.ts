@@ -2,11 +2,11 @@ import 'dotenv/config';
 import { test } from '@playwright/test';
 import percySnapshot from '@percy/playwright';
 import routes from '../routes-grouped.json';
- 
+
 type RouteGroups = {
   [section: string]: string[];
 };
- 
+
 const BASE_URL = 'https://www.infinitiusa.com';
 
 
