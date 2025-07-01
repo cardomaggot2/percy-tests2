@@ -14,8 +14,7 @@ for (const [section, paths] of Object.entries(routeGroups)) {
   test.describe(`${section} pages`, () => {
     for (const route of paths) {
       test(`Snapshot of ${route}`, async ({ page }) => {
-        await page.goto(`${BASE_URL}${route}`);
-        await page.waitForTimeout(10000); // Waits 10 seconds for assets to load
+        await page.goto(`${BASE_URL}${route}`, { waitUntil: 'load' });
         // ✅ Clean the route to use as a unique snapshot name
         const cleanRoute = route.replace(/\//g, '-').replace(/^-/, '');
         if(cleanRoute.includes('/shopping-tools/build-price')) {
