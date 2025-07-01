@@ -31,4 +31,5 @@ jobs:
       - name: Run Percy visual tests
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+          PERCY_PAGE_LOAD_TIMEOUT: 60000
         run: npm run test:percy
