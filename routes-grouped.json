@@ -1,6 +1,6 @@
 {
-  "Homepage": ["/"],
-  "Vehicles": ["/vehicles/suvs/qx80", "/vehicles/crossovers/qx55","/vehicles/crossovers/qx50/", "/vehicles/crossovers/qx60"],
+  "Homepage": [""],
+  "Vehicles": ["/vehicles/suvs/qx80", "/vehicles/crossovers/qx55","/vehicles/crossovers/qx50", "/vehicles/crossovers/qx60"],
   "Shopping Tools": ["/shopping-tools/shop-infiniti-now"],
   "Owners": ["/owners"]
 }
